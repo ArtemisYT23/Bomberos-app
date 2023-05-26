@@ -9,6 +9,7 @@ import {
 import { PrivateRoute } from "../../routes/routes";
 import NavBarIcon from "../../../assets/icons/NavBarIcon";
 import LogoBomberos from "../../../assets/img/logo-bomberos.png";
+import Bomberos from "../../../assets/img/bomberos.png";
 
 export const NavBar = () => {
 
@@ -19,16 +20,29 @@ export const NavBar = () => {
       {!isActive ? (
         <LogoContainerIcon logo={LogoBomberos} onClick={() => setIsActive(!isActive)} />
       ) : (
-        <LogoContainer logo={LogoBomberos} onClick={() => setIsActive(!isActive)} />
+        <LogoContainer logo={Bomberos} onClick={() => setIsActive(!isActive)} />
       )}
       
         <NavLinkContainer
-          to={`${PrivateRoute.initialSesion}`}
+          to={`${PrivateRoute.actividades}`}
         >
-          <NavBarIcon name="managment" configData={'#f71b0b'}/>
+          <NavBarIcon name="managment" configData={'#fc0000'}/>
           {isActive ? <NavLinkName>Actividades</NavLinkName> : <></>}
         </NavLinkContainer>
+
+        <NavLinkContainer
+          to={`${PrivateRoute.contribuyente}`}
+        >
+          <NavBarIcon name="managment" configData={'#fc0000'}/>
+          {isActive ? <NavLinkName>Contribuyentes</NavLinkName> : <></>}
+        </NavLinkContainer>
       
+        <NavLinkContainer
+          to={`${PrivateRoute.establecimiento}`}
+        >
+          <NavBarIcon name="managment" configData={'#fc0000'}/>
+          {isActive ? <NavLinkName>Establecimientos</NavLinkName> : <></>}
+        </NavLinkContainer>
     
         {/* <NavLinkContainer
           to={`${PrivateRoute.MANAGMENT}`}

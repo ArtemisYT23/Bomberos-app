@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const NavBarContainer = styled.div`
   background-color: var(--white);
   min-width: ${(props) =>
-    props.isActive ? "fit-Content" : "var(--navBarMinWidth)"};
+    props.isActive ? "230px" : "var(--navBarMinWidth)"};
   height: 100vh;
   position: sticky;
   top: 0;
@@ -65,8 +65,8 @@ export const LogoContainerIcon = styled(separetorContainer)`
 
 export const NavLinkContainer = styled(Link)`
   display: flex;
-  min-width: var(--navBarMinWidth);
-  height: var(--navBarMinWidth);
+  min-width: 3rem;
+  height: 3.5rem;
   padding: 0 1.5rem;
   align-items: center;
   &:hover {
@@ -80,6 +80,6 @@ export const NavLinkContainer = styled(Link)`
 export const NavLinkName = styled.span`
   margin-left: 1rem;
   font-weight: 700;
-  color: var(--primaryColor);
+  color: #fc0000;
 `;
 
