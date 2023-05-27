@@ -30,7 +30,7 @@ export const Contribuyente = () => {
     },
     {
       field: "razonSocial",
-      headerName: "Razon Socila",
+      headerName: "Razon Social",
       width: 150,
       headerClassName: "super-app-theme--header",
       headerAlign: "center",

@@ -8,6 +8,7 @@ export const PrivateRoute = {
     actividades: 'actividades',
     contribuyente: 'contribuyente',
     establecimiento: 'establecimiento',
+    viewEstablecimiento: 'viewEstablecimiento',
     categorias: 'categorias',
     tasasAnuales: 'tasasAnuales',
 }

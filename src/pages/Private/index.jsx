@@ -9,6 +9,7 @@ import { Contribuyente } from "./Contribuyentes";
 import { Establecimiento } from "./Establecimientos";
 import { Category } from "./Actividades/Category";
 import { TasasAnuales } from "./Actividades/Category/TasasAnuales";
+import { ViewEstablecimient } from "./Establecimientos/ViewEstablecimient";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { getAllActivities } from "../../redux/States/Activity";
@@ -42,13 +43,9 @@ export const Private = () => {
             path={PrivateRoute.initialSesion}
             element={<InitialSesion />}
           />
-
           <Route path={PrivateRoute.actividades} element={<Actividades />} />
-
           <Route path={PrivateRoute.categorias} element={<Category />} />
-
           <Route path={PrivateRoute.tasasAnuales} element={<TasasAnuales />} />
-
           <Route
             path={PrivateRoute.contribuyente}
             element={<Contribuyente />}
@@ -57,6 +54,11 @@ export const Private = () => {
             path={PrivateRoute.establecimiento}
             element={<Establecimiento />}
           />
+          <Route
+            path={PrivateRoute.viewEstablecimiento}
+            element={<ViewEstablecimient />}
+          />
+          
         </Routes>
       </ContainerInfo>
     </Content>
