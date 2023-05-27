@@ -70,11 +70,11 @@ export const Header = () => {
         <NameContainer>
           {NameGlobalSelected ? (
             <TextNameResource>
-              <h1>SISTEMA BETA</h1>
+              <h1>SISTEMA BCBG BETA </h1>
             </TextNameResource>
           ) : (
             <Title>
-              <h1>SISTEMA BETA</h1>
+              <h1>SISTEMA BCBG BETA</h1>
             </Title>
           )}
         </NameContainer>
